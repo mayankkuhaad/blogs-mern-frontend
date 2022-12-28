@@ -8,7 +8,7 @@ function Booklist() {
   const Navigator = useNavigate();
 
   useEffect(() => {
-    axios.get("https://mayank-blogs-mern.onrender.com/booklist/").then((res) => {
+    axios.get("https://backend-blog-0k5n.onrender.com/booklist").then((res) => {
       console.log(res.data.BooksData);
       setBooks(res.data.BooksData);
     });
