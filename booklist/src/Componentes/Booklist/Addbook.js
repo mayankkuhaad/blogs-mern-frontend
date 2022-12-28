@@ -17,7 +17,7 @@ function Addbook() {
 
   let submitHandle =()=>{
     console.log(BookData);
-    axios.post("https://mayank-blogs-mern.onrender.com/booklist/",BookData).then((res)=>{
+    axios.post("https://backend-blog-0k5n.onrender.com/booklist",BookData).then((res)=>{
       alert('Blog is added');
       Navigator("/Booklist");
     })
